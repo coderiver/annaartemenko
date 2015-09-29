@@ -1,0 +1,135 @@
+// role section
+.roles
+	padding: 0
+	background: url("../img/role-bg1.jpg")
+	+cover
+	&__bg
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		width: 50%
+		height: 100%  
+		background: url("../img/role-bg2.png") 0 100% no-repeat
+		z-index: 10
+	.container
+		position: relative
+		vertical-align: top
+		margin-top: 15%
+		z-index: 7
+	.title
+		margin-bottom: 35px
+		&:before
+			content: ""
+			position: absolute
+			top: -55px
+			left: -90px
+			+s(r)
+	&__wrap
+		ul
+			li
+				display: inline-block
+				vertical-align: top
+				width: 50%
+				margin-bottom: 35px
+				p
+					position: relative
+					display: block
+					padding: 0 20px 0 30px
+					opacity: 0.7
+					color: #FFF
+					font-size: 17px 
+					&:before
+						content: ""
+						position: absolute
+						top: 5px
+						left: 0
+						display: block
+		&.theater
+			.subtitle
+				&:before
+					+s(theater)
+			ul li p
+				&:before
+					+s(theater1)
+		&.movie
+			.subtitle
+				&:before
+					+s(movie)
+			ul li p
+				&:before
+					+s(movie1)
+		&.awards
+			.subtitle
+				&:before
+					+s(awards)
+			ul li 
+				display: block
+				width: 100% 
+				p
+					&:before
+						+s(awards1)
+
+.subtitle
+	position: relative
+	display: block
+	padding-left: 60px
+	margin: 40px 0
+	color: #FFF 
+	font-size: 23px
+	font-style: italic
+	font-weight: normal
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+
+.tabs
+	position: relative
+	display: inline-block
+	margin: 0 -20px
+	&:before, &:after
+		content: ""
+		position: absolute
+		bottom: 0
+		width: 300%
+		height: 1px
+		background: #3D302F 
+		z-index: 3
+	&:before
+		left: -300%
+	&:after
+		right: -300%
+	.btn-tab
+		display: inline-block
+		vertical-align: middle
+		height: 60px
+		padding: 10px 20px
+		border-left: 1px solid #3E312F
+		border-bottom: 1px solid #3D302F 
+		+vertical
+		span
+			display: inline-block
+			vertical-align: middle
+			text-align: left
+			opacity: 0.5
+			color: #FFF 
+			font-size: 17px
+			font-style: italic
+			line-height: 1
+		&:first-child
+			border-left: none
+			&.is-active
+				border-left: 1px solid #3E312F  
+		&:last-child
+			&.is-active
+				border-right: 1px solid #3E312F 
+		&.is-active
+			border-top: 1px solid #3E312F 
+			border-bottom: none
+			span
+				color: #e9af6b
+		
+
+

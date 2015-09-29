@@ -1,0 +1,137 @@
+$icons: (0:0)
+$icons: map-merge($icons,(awards: (X: -833px, Y:-293px, W: 31px, H: 29px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(awards1: (X: -833px, Y:-421px, W: 11px, H: 8px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(bottom-b: (X: -845px, Y:-253px, W: 11px, H: 30px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(bottom-w: (X: -845px, Y:-151px, W: 11px, H: 30px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(codedby: (X: -700px, Y:-433px, W: 47px, H: 5px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(coderiver: (X: -647px, Y:-433px, W: 49px, H: 5px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(fb: (X: -833px, Y:-398px, W: 9px, H: 19px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(gp: (X: -833px, Y:-356px, W: 19px, H: 18px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(k: (X: -608px, Y:0px, W: 258px, H: 147px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(logo: (X: 0px, Y:-236px, W: 604px, H: 232px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(movie: (X: -833px, Y:-326px, W: 26px, H: 26px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(movie1: (X: -846px, Y:-398px, W: 11px, H: 11px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(r: (X: -608px, Y:-293px, W: 221px, H: 136px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(t: (X: -608px, Y:-151px, W: 233px, H: 138px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(theater: (X: -608px, Y:-433px, W: 35px, H: 33px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(theater1: (X: -856px, Y:-356px, W: 9px, H: 10px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(title1: (X: 0px, Y:0px, W: 604px, H: 232px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(top-b: (X: -845px, Y:-219px, W: 11px, H: 30px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(top-w: (X: -845px, Y:-185px, W: 11px, H: 30px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(tw: (X: -833px, Y:-378px, W: 19px, H: 16px, TW: 866px, TH: 468px, IMG: '../img/icons.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+
+@mixin s($i)
+  +sprite($i)
+
+.icon-awards
+  width: 31px
+  height: 29px
+  background-image: url('../img/icons.png')
+  background-position: -833px -293px
+.icon-awards1
+  width: 11px
+  height: 8px
+  background-image: url('../img/icons.png')
+  background-position: -833px -421px
+.icon-bottom-b
+  width: 11px
+  height: 30px
+  background-image: url('../img/icons.png')
+  background-position: -845px -253px
+.icon-bottom-w
+  width: 11px
+  height: 30px
+  background-image: url('../img/icons.png')
+  background-position: -845px -151px
+.icon-codedby
+  width: 47px
+  height: 5px
+  background-image: url('../img/icons.png')
+  background-position: -700px -433px
+.icon-coderiver
+  width: 49px
+  height: 5px
+  background-image: url('../img/icons.png')
+  background-position: -647px -433px
+.icon-fb
+  width: 9px
+  height: 19px
+  background-image: url('../img/icons.png')
+  background-position: -833px -398px
+.icon-gp
+  width: 19px
+  height: 18px
+  background-image: url('../img/icons.png')
+  background-position: -833px -356px
+.icon-k
+  width: 258px
+  height: 147px
+  background-image: url('../img/icons.png')
+  background-position: -608px 0px
+.icon-logo
+  width: 604px
+  height: 232px
+  background-image: url('../img/icons.png')
+  background-position: 0px -236px
+.icon-movie
+  width: 26px
+  height: 26px
+  background-image: url('../img/icons.png')
+  background-position: -833px -326px
+.icon-movie1
+  width: 11px
+  height: 11px
+  background-image: url('../img/icons.png')
+  background-position: -846px -398px
+.icon-r
+  width: 221px
+  height: 136px
+  background-image: url('../img/icons.png')
+  background-position: -608px -293px
+.icon-t
+  width: 233px
+  height: 138px
+  background-image: url('../img/icons.png')
+  background-position: -608px -151px
+.icon-theater
+  width: 35px
+  height: 33px
+  background-image: url('../img/icons.png')
+  background-position: -608px -433px
+.icon-theater1
+  width: 9px
+  height: 10px
+  background-image: url('../img/icons.png')
+  background-position: -856px -356px
+.icon-title1
+  width: 604px
+  height: 232px
+  background-image: url('../img/icons.png')
+  background-position: 0px 0px
+.icon-top-b
+  width: 11px
+  height: 30px
+  background-image: url('../img/icons.png')
+  background-position: -845px -219px
+.icon-top-w
+  width: 11px
+  height: 30px
+  background-image: url('../img/icons.png')
+  background-position: -845px -185px
+.icon-tw
+  width: 19px
+  height: 16px
+  background-image: url('../img/icons.png')
+  background-position: -833px -378px

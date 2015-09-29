@@ -1,0 +1,56 @@
+// contacts section
+.contacts
+	background: url("../img/contacts-bg.png")
+	+cover
+	.title
+		color: #000
+		&:before
+			content: ""
+			position: absolute
+			bottom: -35px
+			left: -73px
+			+s(k)
+	&__inn
+		margin: 90px 0
+	&__row
+		padding: 25px 0 0
+		&.tel
+			padding: 0 0 10px
+			border-bottom: 1px solid #e4e4e4
+			span
+				vertical-align: top
+			a
+				color: #000
+				font-size: 60px
+				font-style: normal
+				line-height: 0.8
+				+savoye
+		span
+			display: inline-block
+			vertical-align: middle
+			max-width: 100px
+			margin-right: 20px
+			opacity: 0.5
+			color: #000
+			font-size: 15px
+			font-style: italic
+			line-height: 1
+		a
+			display: inline-block
+			vertical-align: middle
+			color: #c29f77
+			font-size: 25px
+			font-style: italic
+	&__social
+		font-size: 0
+		a
+			display: inline-block
+			vertical-align: middle
+			margin-right: 30px
+			&.fb
+				+s(fb)
+			&.tw
+				+s(tw)
+			&.gp
+				+s(gp)
+
