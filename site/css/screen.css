@@ -181,7 +181,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
 
 .roles { padding: 0; background: url("../img/role-bg1.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .roles__bg { position: absolute; top: 0; bottom: 0; left: 0; width: 50%; height: 100%; background: url("../img/role-bg2.png") 0 100% no-repeat; z-index: 10; }
-.roles .container { position: relative; vertical-align: top; margin-top: 15%; z-index: 7; }
+.roles .container { position: relative; vertical-align: middle; min-height: 580px; z-index: 7; }
 .roles .title { margin-bottom: 35px; }
 .roles .title:before { content: ""; position: absolute; top: -55px; left: -90px; background-image: url("../img/icons.png"); width: 221px; height: 136px; background-position: -608px -293px; }
 .roles__wrap ul li { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 35px; }
@@ -222,11 +222,10 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
 .contacts .title { color: #000; }
 .contacts .title:before { content: ""; position: absolute; bottom: -35px; left: -73px; background-image: url("../img/icons.png"); width: 258px; height: 147px; background-position: -608px 0px; }
 .contacts__inn { margin: 90px 0; }
-.contacts__row { padding: 25px 0 0; }
-.contacts__row.tel { padding: 0 0 10px; border-bottom: 1px solid #e4e4e4; }
+.contacts__row.tel { padding: 0 0 10px; border-bottom: 1px solid #e4e4e4; margin-bottom: 25px; }
 .contacts__row.tel span { vertical-align: top; }
 .contacts__row.tel a { color: #000; font-size: 60px; font-style: normal; line-height: 0.8; font-family: SavoyeLetPlain, sans-serif; }
-.contacts__row span { display: inline-block; vertical-align: middle; max-width: 100px; margin-right: 20px; opacity: 0.5; color: #000; font-size: 15px; font-style: italic; line-height: 1; }
+.contacts__row span { display: inline-block; vertical-align: middle; max-width: 100px; margin: 5px 20px 0 0; opacity: 0.5; color: #000; font-size: 15px; font-style: italic; line-height: 1; }
 .contacts__row a { display: inline-block; vertical-align: middle; color: #c29f77; font-size: 25px; font-style: italic; }
 .contacts__social { font-size: 0; }
 .contacts__social a { display: inline-block; vertical-align: middle; margin-right: 30px; }
