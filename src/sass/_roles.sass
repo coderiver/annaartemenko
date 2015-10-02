@@ -69,6 +69,53 @@
 				p
 					&:before
 						+s(awards1)
+	+r(1170)
+		.roles__bg
+			background-position-x: 100%
+	+r(1020)
+		.roles__bg
+			display: none
+		.inner
+			text-align: center
+		.container
+			margin: 0
+			text-align: left
+		.title
+			margin-left: 70px 
+		.arrow.to-bottom
+			color: #FFF
+			span
+				+s(bottom-w)
+	+rh(760)
+		.container
+			min-height: 400px
+		.title
+			font-size: 50px
+			margin-bottom: 5px
+		.roles__wrap ul li
+			display: block
+			width: 100% 
+			margin-bottom: 5px
+			p
+				padding: 0 0 0 20px
+				font-size: 16px
+	+rh(568)
+		.container
+			min-height: auto
+			vertical-align: top
+			margin-top: 60px
+		.title
+			font-size: 40px
+		.roles__inner
+			margin: 0 0 0 -20px
+		.roles__wrap ul li
+			margin-bottom: 0
+			p
+				line-height: 1.2
+	+rh(320)
+		.container
+			min-height: auto
+			margin-top: 30px
 
 .subtitle
 	position: relative
@@ -84,6 +131,12 @@
 		position: absolute
 		top: 0
 		left: 0
+	+rh(760)
+		margin: 10px 0
+		font-size: 18px
+		line-height: 1
+		&:before
+			top: -7px
 
 .tabs
 	position: relative
@@ -130,6 +183,14 @@
 			border-bottom: none
 			span
 				color: #e9af6b
+	+rh(760)
+		.btn-tab
+			height: 45px
+			padding: 5px
+			span
+				font-size: 16px
+	+rh(568)
+		margin: 0 -20px 0 0
 		
 
 
